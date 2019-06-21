@@ -9,5 +9,5 @@
 |		  |`Flatten`|`flattenLayer` |
 |		  |`Concatenate`|`concatenationLayer`|
 |		  |`BatchNormalization`|`batchNormalizationLayer`|
-|		  |`Activation('relu')`|`reluLayer`|
-|		  |`Activation('tanh')`|`tanhLayer`|
+|**Activation**|`Activation('relu')`|`reluLayer`|
+|	      |`Activation('tanh')`|`tanhLayer`|
