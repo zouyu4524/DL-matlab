@@ -19,3 +19,11 @@ Matlab release: **R2019a**
 |		  |`BatchNormalization`|`batchNormalizationLayer`|
 |**Activation**|`Activation('relu')`|`reluLayer`|
 |	      |`Activation('tanh')`|`tanhLayer`|
+|		  |`Activation('linear')`|*nothing after the previous layer*|
+|         |`Activation('softmax')`| `softmaxLayer` |
+|**Loss** |`mse` | `regressionLayer` [^1]|
+|		  |`mae` | `maeRegressionLayer` (not officailly included yet) |
+| 	 	  |`categorical_crossentropy` | `classificationLayer`[^2] |
+
+[^1]: Note that, the loss function is binded with the output layer in MATLAB&reg;.
+[^2]: A classification layer must be preceded by a softmax layer.
