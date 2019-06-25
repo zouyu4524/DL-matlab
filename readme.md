@@ -24,6 +24,9 @@ Matlab release: **R2019a**
 |**Loss** |`mse` | `regressionLayer` [^1]|
 |		  |`mae` | `maeRegressionLayer` (not officailly included yet) |
 | 	 	  |`categorical_crossentropy` | `classificationLayer`[^2] |
+|**Optimizer**|`SGD` | `sgdm` |
+|             |`RMSprop` | `rmsprop` |
+|             |`Adam` | `adam` |
 
 [^1]: Note that, the loss function is binded with the output layer in MATLAB&reg;.
 [^2]: A classification layer must be preceded by a softmax layer.
