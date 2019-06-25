@@ -23,7 +23,7 @@ Matlab release: **R2019a**
 |         |`Activation('softmax')`| `softmaxLayer` |
 |**Loss** |`mse` | `regressionLayer` <sup>1</sup>|
 |		  |`mae` | `maeRegressionLayer` (not officailly included yet) |
-| 	 	  |`categorical_crossentropy` | `classificationLayer`<sup>2</sup> |
+| 	 	  |`categorical_crossentropy` | `classificationLayer` <sup>2</sup> |
 
 [1]: Note that, the loss function is binded with the output layer in MATLAB&reg;.  
 [2]: A classification layer must be preceded by a softmax layer.
