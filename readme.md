@@ -21,9 +21,9 @@ Matlab release: **R2019a**
 |	      |`Activation('tanh')`|`tanhLayer`|
 |		  |`Activation('linear')`|*nothing after the previous layer*|
 |         |`Activation('softmax')`| `softmaxLayer` |
-|**Loss** |`mse` | `regressionLayer` [^1]|
+|**Loss** |`mse` | `regressionLayer` <sup>1</sup>|
 |		  |`mae` | `maeRegressionLayer` (not officailly included yet) |
-| 	 	  |`categorical_crossentropy` | `classificationLayer`[^2] |
+| 	 	  |`categorical_crossentropy` | `classificationLayer`<sup>2</sup> |
 
-[^1]: Note that, the loss function is binded with the output layer in MATLAB&reg;.
-[^2]: A classification layer must be preceded by a softmax layer.
+[1]: Note that, the loss function is binded with the output layer in MATLAB&reg;.  
+[2]: A classification layer must be preceded by a softmax layer.
