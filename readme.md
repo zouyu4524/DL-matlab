@@ -2,7 +2,15 @@
 
 It's more convenient for me to debug deep learning networks in MATLAB compared with the ones written in Python, such as Tensorflow, Keras or PyTorch. Here we test some functionalitiies related to deep learning develped in MATLAB, i.e., deep learning toolbox.
 
-[TOC]
+- [Deep learning in MATLAB](#deep-learning-in-matlab)
+  * [Prerequest](#prerequest)
+  * [Demo](#demo)
+  * [Example](#example)
+  * [Dataset](#dataset)
+  * [Build a neural network](#build-a-neural-network)
+  * [Pros and Cons](#pros-and-cons)
+  * [Cheatsheet](#cheatsheet)
+  * [Reference](#reference)
 
 ## Prerequest
 
