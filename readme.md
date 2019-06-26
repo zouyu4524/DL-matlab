@@ -114,7 +114,7 @@ We present a comparison between Keras and Matlab on the process of building a ne
 |3. 	| Train the network via `trainiNetwork` | Train the network via `fit` function. |
 
 Basically, the processes of building a network via MATLAB and Keras are similar. It's worth to note three differences:  
-1. The loss function is bined with the output layer in MATLAB.  
+1. The loss function is binded with the output layer in MATLAB.  
 2. The settings of the training process are specificied via a `trainingOptions` object in MATLAB.  
 3. The model compile process is integrated with `trainNetwork` in MATLAB.  
 
