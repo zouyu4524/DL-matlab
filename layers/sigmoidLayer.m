@@ -22,7 +22,7 @@ classdef sigmoidLayer < nnet.layer.Layer
         end
         
         function [dLdX] = backward(layer, ~, Z, dLdZ, ~)
-            % [dLdX, dLdAlpha] = backward(layer, X, ~, dLdZ, ~)
+            % [dLdX] = backward(layer, X, ~, dLdZ, ~)
             % backward propagates the derivative of the loss function
             % through the layer.
             % Inputs:
