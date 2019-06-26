@@ -1,6 +1,8 @@
-# Deep learning in MATLAB
+# Deep learning in MATLAB  
 
 It's more convenient for me to debug deep learning networks in MATLAB compared with the ones written in Python, such as Tensorflow, Keras or PyTorch. Here we test some functionalitiies related to deep learning develped in MATLAB, i.e., deep learning toolbox.
+
+[TOC]
 
 ## Prerequest
 
@@ -56,6 +58,43 @@ opts = trainingOptions('sgdm', ...
 net = trainNetwork(X, Y, layers, opts);
 ```
 
+## Example
+
+**EG01_classification**: We build a simple neural network (`SeriesNetwork`) with two hidden layers for a classification task.  
+
+**EG02_regression**: We build a neural network (`SeriesNetwork`) with two hidden layers for a regression task.  
+
+**EG03_layerGraph**: We build a `DAGNetwork` using `layerGraph` for a classification task.  
+
+**EG04_sigmoidActivation**: We develop a sigmoid activation layer in this example.  
+
+**EG05_softmaxActivation**: We develop a softmax activation layer for a regression task. (The built-in `softmaxLayer` in the toolbox is designated to the classification layer for now [R2019a].) 
+
+**EG06_multipleInputs**: We develop an input layer with multiple inputs support.  
+
+## Dataset
+
+**Classification**  
+The input data is randomly generated with two-feature entries. Each entry's output is labelled according to the criterion `mean(x)<0.5`, i.e., if the average of the two features is less than 0.5, the output is marked as true and false otherwise.  
+
+|		|Size/Type	|Value	|
+|:-----:|:--------	|:------|
+|	Input 	| `1x1x2 double` | Each feature ranges in [0,1] |
+|	Output  | [`categorical`](https://www.mathworks.com/help/matlab/ref/categorical.html)  | `true` or `false` |
+
+**Regression**  
+The input data is the same with the one in classification dataset. The output has three dimensions and each one maps the input to a scalar via a function defined as follows:  
+
+|		|Size/Type	|Value	|
+|:-----:|:--------	|:------|
+|	Input 	| `1x1x2 double` | Each feature ranges in [0,1] |
+|	x1      | `double` 		 | Input(1) |
+|	x1      | `double` 		 | Input(2) |
+|	y1 	    | `double`		 | x1 + x2 - 1 |
+|	y2 		| `double` 		 | 2\*x1\*x2 - 1|
+|	y3 		| `double`		 | x1^2 + x2^2 - 1|
+|   Output  | `1x3 double`   | [y1, y2, y3] |
+
 ## Build a neural network
 
 We present a comparison between Keras and Matlab on the process of building a neural network.
@@ -109,7 +148,7 @@ Basically, the processes of building a network via MATLAB and Keras are similar.
 [1]: Note that, the loss function is binded with the output layer in MATLAB&reg;.  
 [2]: A classification layer must be preceded by a softmax layer.
 
-## References
+## Reference
 
 1. Mathworks, [Deep Learning Toolbox](https://www.mathworks.com/help/deeplearning/index.html)  
 2. Mahmoud Afifi, [how to use multiple input layers in DAG net as shown in the figure](https://www.mathworks.com/matlabcentral/answers/369328-how-to-use-multiple-input-layers-in-dag-net-as-shown-in-the-figure#comment_700234)  
