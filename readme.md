@@ -6,7 +6,7 @@ It's more convenient for me to debug deep learning networks in MATLAB compared w
 
 Matlab release: **R2019a**
 
-The deep learning toolbox is introduced since R2016a. However, it's better to use the version greater than R2018b due to quite a lot updates on the toolbox.
+The deep learning toolbox is introduced since R2016a. However, it's better to use the version greater than R2018b due to quite a lot [updates](https://ww2.mathworks.cn/help/deeplearning/release-notes.html) on the toolbox.
 
 ## Demo
 
