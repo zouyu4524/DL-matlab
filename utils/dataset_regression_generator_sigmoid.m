@@ -11,7 +11,7 @@ if ~exist('../dataset', 'dir')
 end
 
 % generate X randomly, 4-D double, the last dimension is the number of
-% entries, we use 1x1x10 type to fit the imageInputLayer of the deep
+% entries, we use 1x1x2 type to fit the imageInputLayer of the deep
 % learning toolbox, which accepts inputs in HxWxC type, where H, W and C
 % represents height, width and channel of the image, respectively. Here we
 % put the feature dimension of the input data at the channel dimension.
