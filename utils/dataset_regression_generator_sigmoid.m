@@ -21,7 +21,6 @@ X_reshape = reshape(X, 2, 10000)';
 x1 = X_reshape(:, 1); x2 = X_reshape(:, 2);
 
 % apply functions to produce Y
-% apply functions to produce Y
 y1 = @(x1, x2) (x1 + x2)/2;
 y2 = @(x1, x2) x1.*x2;
 y3 = @(x1, x2) (x1.^2 + x2.^2)/2;
