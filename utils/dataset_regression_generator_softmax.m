@@ -29,4 +29,4 @@ Y = [y1(x1, x2), y2(x1, x2), y3(x1, x2)];
 Y = reSoftmax(Y, 2);
 
 % save the dataset
-save('../dataset/regression02.mat', 'X', 'Y', 'seed');
+save('../dataset/regression03.mat', 'X', 'Y', 'seed');
