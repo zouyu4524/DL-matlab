@@ -140,6 +140,7 @@ Basically, the processes of building a network via MATLAB and Keras are similar.
 |		  |`Flatten`|`flattenLayer` |
 |		  |`Concatenate`|`concatenationLayer`|
 |		  |`BatchNormalization`|`batchNormalizationLayer`|
+|		  |`Dropout`|`dropoutLayer`|
 |**Activation**|`Activation('relu')`|`reluLayer`|
 |	      |`Activation('tanh')`|`tanhLayer`|
 |		  |`Activation('linear')`|*nothing after the previous layer*|
@@ -153,8 +154,8 @@ Basically, the processes of building a network via MATLAB and Keras are similar.
 |**Method**|`fit`	| `trainNetwork` |
 |          |`predict` | `predict` / `classify` |
 
-[1]: Note that, the loss function is binded with the output layer in MATLAB&reg;.  
-[2]: A classification layer must be preceded by a softmax layer.
+1. Note that, the loss function is binded with the output layer in MATLAB&reg;.  
+2. A classification layer must be preceded by a softmax layer.
 
 ## Reference
 
