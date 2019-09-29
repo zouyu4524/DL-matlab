@@ -1,5 +1,8 @@
 # Deep learning in MATLAB  
 
+**IMPORT NOTE**: *R2019b has been released recently and there are massive updates within Deep learning toolbox™. For example, the multiple inputs Layer and automatic differentiation have been included.*  
+Please check out for more detailed information in [release note](https://www.mathworks.com/help/deeplearning/release-notes.html). This repo might be obsolete.
+
 It's more convenient for me to debug deep learning networks in MATLAB compared with the ones written in Python, such as Tensorflow, Keras or PyTorch. Here we test some functionalitiies related to deep learning develped in MATLAB, i.e., deep learning toolbox.
 
 - [Deep learning in MATLAB](#deep-learning-in-matlab)
